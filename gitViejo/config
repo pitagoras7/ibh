@@ -1,0 +1,17 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "origin"]
+	url = https://github.com/pitagoras7/ibuhotelapp.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+[branch "juansam"]
+	remote = origin
+	merge = refs/heads/juansam
+[branch "daniel"]
+	remote = origin
+	merge = refs/heads/daniel

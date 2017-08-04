@@ -1,0 +1,36 @@
+0000000000000000000000000000000000000000 8c84876773e044f474fc928fc5ba0afa107e2024 root <root@pitagora.pitgora> 1501278374 -0500	commit (initial): primer cambio
+8c84876773e044f474fc928fc5ba0afa107e2024 f3dd95ab72fcfc855685a76b23c4f58bf0c32c12 root <root@pitagora.pitgora> 1501279163 -0500	commit: cambios en el readme
+f3dd95ab72fcfc855685a76b23c4f58bf0c32c12 f3dd95ab72fcfc855685a76b23c4f58bf0c32c12 root <root@pitagora.pitgora> 1501283719 -0500	checkout: moving from master to developer
+f3dd95ab72fcfc855685a76b23c4f58bf0c32c12 a9d379c45a68acf5d6f5b6f76fa50692e469aed8 root <root@pitagora.pitgora> 1501284010 -0500	commit: edicion dasboard
+a9d379c45a68acf5d6f5b6f76fa50692e469aed8 a3fd10608ad4d82ec4a833f5a80bdafecf7936d8 pitagoras7 <root@pitagora.pitgora> 1501284778 -0500	commit: agrego nuevo titulo
+a3fd10608ad4d82ec4a833f5a80bdafecf7936d8 579ded730dddfd5500c58e6af5d27ff675655be0 pitagoras7 <root@pitagora.pitgora> 1501285140 -0500	commit (merge): agrego nuevo titulo
+579ded730dddfd5500c58e6af5d27ff675655be0 2eb79ff28e652f51e54948f396f0a79a9cb2d3bb pitagoras7 <root@pitagora.pitgora> 1501287334 -0500	commit: sbida plantilla
+2eb79ff28e652f51e54948f396f0a79a9cb2d3bb fcbacb8e6344aa55bc8752390af407d207f8042a pitagoras7 <root@pitagora.pitgora> 1501289012 -0500	commit: sbida plantilla
+fcbacb8e6344aa55bc8752390af407d207f8042a c2f33f0326dc7fd92ca918d08a5bb309541cce4d pitagoras7 <root@pitagora.pitgora> 1501290065 -0500	commit: sbida plantilla
+c2f33f0326dc7fd92ca918d08a5bb309541cce4d f3dd95ab72fcfc855685a76b23c4f58bf0c32c12 pitagoras7 <root@pitagora.pitgora> 1501343836 -0500	checkout: moving from developer to master
+f3dd95ab72fcfc855685a76b23c4f58bf0c32c12 c2f33f0326dc7fd92ca918d08a5bb309541cce4d pitagoras7 <root@pitagora.pitgora> 1501343862 -0500	checkout: moving from master to developer
+c2f33f0326dc7fd92ca918d08a5bb309541cce4d f3dd95ab72fcfc855685a76b23c4f58bf0c32c12 pitagoras7 <root@pitagora.pitgora> 1501343945 -0500	checkout: moving from developer to master
+f3dd95ab72fcfc855685a76b23c4f58bf0c32c12 8172a775934486a284b033482619bf87b64b120d pitagoras7 <root@pitagora.pitgora> 1501349176 -0500	pull origin juansam: Fast-forward
+8172a775934486a284b033482619bf87b64b120d 8172a775934486a284b033482619bf87b64b120d pitagoras7 <root@pitagora.pitgora> 1501349197 -0500	checkout: moving from master to juansam
+8172a775934486a284b033482619bf87b64b120d ce442eecd069c7803d3aa0ed0f7ef7523fb24fde pitagoras7 <root@pitagora.pitgora> 1501349700 -0500	pull origin juansam: Fast-forward
+ce442eecd069c7803d3aa0ed0f7ef7523fb24fde c2f33f0326dc7fd92ca918d08a5bb309541cce4d pitagoras7 <root@pitagora.pitgora> 1501349723 -0500	checkout: moving from juansam to developer
+c2f33f0326dc7fd92ca918d08a5bb309541cce4d ce442eecd069c7803d3aa0ed0f7ef7523fb24fde pitagoras7 <root@pitagora.pitgora> 1501349843 -0500	checkout: moving from developer to juansam
+ce442eecd069c7803d3aa0ed0f7ef7523fb24fde c2f33f0326dc7fd92ca918d08a5bb309541cce4d pitagoras7 <root@pitagora.pitgora> 1501350187 -0500	checkout: moving from juansam to developer
+c2f33f0326dc7fd92ca918d08a5bb309541cce4d ce442eecd069c7803d3aa0ed0f7ef7523fb24fde pitagoras7 <root@pitagora.pitgora> 1501350207 -0500	checkout: moving from developer to juansam
+ce442eecd069c7803d3aa0ed0f7ef7523fb24fde add19182564584b5e7285f80547d1a43a3742b15 pitagoras7 <root@pitagora.pitgora> 1501350320 -0500	commit: cambios de ip
+add19182564584b5e7285f80547d1a43a3742b15 8172a775934486a284b033482619bf87b64b120d pitagoras7 <pedrolsdrojas@gmail.com> 1501351023 -0500	checkout: moving from juansam to master
+8172a775934486a284b033482619bf87b64b120d add19182564584b5e7285f80547d1a43a3742b15 pitagoras7 <pedrolsdrojas@gmail.com> 1501351119 -0500	checkout: moving from master to juansam
+add19182564584b5e7285f80547d1a43a3742b15 764243f97d2d378767c860dabf8843d9506c9a25 pitagoras7 <pedrolsdrojas@gmail.com> 1501359230 -0500	pull origin daniel: Fast-forward
+764243f97d2d378767c860dabf8843d9506c9a25 764243f97d2d378767c860dabf8843d9506c9a25 pitagoras7 <pedrolsdrojas@gmail.com> 1501359248 -0500	checkout: moving from juansam to daniel
+764243f97d2d378767c860dabf8843d9506c9a25 764243f97d2d378767c860dabf8843d9506c9a25 pitagoras7 <pedrolsdrojas@gmail.com> 1501359330 -0500	checkout: moving from daniel to juansam
+764243f97d2d378767c860dabf8843d9506c9a25 764243f97d2d378767c860dabf8843d9506c9a25 pitagoras7 <pedrolsdrojas@gmail.com> 1501359344 -0500	checkout: moving from juansam to juansam
+764243f97d2d378767c860dabf8843d9506c9a25 764243f97d2d378767c860dabf8843d9506c9a25 pitagoras7 <pedrolsdrojas@gmail.com> 1501359575 -0500	checkout: moving from juansam to juansam
+764243f97d2d378767c860dabf8843d9506c9a25 bd05788da7bf93642679224076f1e7a3a80ccca6 pitagoras7 <pedrolsdrojas@gmail.com> 1501360086 -0500	commit (merge): 3 cambio
+bd05788da7bf93642679224076f1e7a3a80ccca6 7f11c77051bd4d151a80581395c82e66f7a14b32 pitagoras7 <pedrolsdrojas@gmail.com> 1501361599 -0500	commit: agregue funcion para q no visualice los errores con set_error
+7f11c77051bd4d151a80581395c82e66f7a14b32 1cc44e0435d8bdb38664027577e666a62bb172ba pitagoras7 <pedrolsdrojas@gmail.com> 1501362007 -0500	commit: arreglo de la funcion que muestra los errores
+1cc44e0435d8bdb38664027577e666a62bb172ba bd05788da7bf93642679224076f1e7a3a80ccca6 pitagoras7 <pedrolsdrojas@gmail.com> 1501362906 -0500	checkout: moving from juansam to bd05788da7bf93642679224076f1e7a3a80ccca6
+bd05788da7bf93642679224076f1e7a3a80ccca6 1cc44e0435d8bdb38664027577e666a62bb172ba pitagoras7 <pedrolsdrojas@gmail.com> 1501362975 -0500	checkout: moving from bd05788da7bf93642679224076f1e7a3a80ccca6 to juansam
+1cc44e0435d8bdb38664027577e666a62bb172ba 24f888e0d1d53e4409b6e727c6579f2b742a69c1 pitagoras7 <pedrolsdrojas@gmail.com> 1501363726 -0500	pull origin juansam: Fast-forward
+24f888e0d1d53e4409b6e727c6579f2b742a69c1 8172a775934486a284b033482619bf87b64b120d pitagoras7 <pedrolsdrojas@gmail.com> 1501363781 -0500	checkout: moving from juansam to master
+8172a775934486a284b033482619bf87b64b120d c0944ae8f3ee2fa63819da4ca1e9dfa374e414e1 pitagoras7 <pedrolsdrojas@gmail.com> 1501486726 -0500	commit: permisos
+c0944ae8f3ee2fa63819da4ca1e9dfa374e414e1 b7f98056bb844a39020372575413517e4681c956 pitagoras7 <pedrolsdrojas@gmail.com> 1501886223 -0500	commit: actualizaciones del reservation js

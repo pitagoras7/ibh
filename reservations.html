@@ -1,0 +1,422 @@
+{% extends "template/reservationBase.html" %}
+
+
+{% block body %}
+
+<div id="dashboard_general">
+	<div id="crudNav">
+
+		<div class="row">
+
+			<div class="input-field col m4 s12">
+				<a onclick="findDisponibilidad()" class=" btn btn-large waves-effect waves-light green">
+					Consultar Disponibilidad 
+				</a>
+			</div>
+
+
+			<div class="input-field col m4 s12">
+				<i class="material-icons prefix">account_circle</i>
+				<input name="desde" id="desde"  type="text" class="validate">
+				<label for="icon_prefix">Desde</label>
+			</div>
+
+
+
+			<div class="input-field col m4 s12">
+				<i class="material-icons prefix">account_circle</i>
+				<input name="hasta" id="hasta" type="text" class="validate">
+				<label for="icon_prefix">Hasta</label>
+			</div>
+
+		</div>
+
+
+		<div class="row">
+
+			<div class="input-field col m3 s12">
+				<div onclick="newGuest()" style="width: 100%" class=" btn btn-large waves-effect waves-light green">
+					Agregar Huesped 
+				</div>
+			</div>
+
+			<div class="input-field col m3 s12">
+				<div onclick="newRoomservice()"  style="width: 100%" class=" btn btn-large waves-effect waves-light orange">
+					Agregar Servicio  
+				</div>
+			</div>
+
+			<div class="input-field col m3 s12">
+				<div onclick="newGuest()"  style="width: 100%" class=" btn btn-large waves-effect waves-light red">
+					Agregar Indicidente  
+				</div>
+			</div>
+
+			<div class="input-field col m3 s12">
+				<div onclick="newGuest()"  style="width: 100%" class=" btn btn-large waves-effect waves-light blue">
+
+					Editar Estadia
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="tableDisponibilidad">
+	</div>
+
+
+	<div class="row">
+		<div id="tableGuest" class="col m8 s12">
+		</div>
+
+		<div id="principal" class="col m4 s12">	
+			<div class="collection">
+
+				<a href="#!" class="collection-item">HABITACION <span class="aviso badge orange">H71</span> <span class="aviso badge blue">SUITE </span> </a>
+				<a href="#!" class="collection-item">CHECK IN   <span class="aviso badge blue">Viernes - 11/12/2017 </span></a>
+				<a href="#!" class="collection-item">CHECK OUT  <span class="aviso badge blue">Viernes - 11/12/2017 </span></a>
+				<a href="#!" class="collection-item">CANTIDAD DE DÍAS<span class="aviso badge"> 4 </span></a>
+				<a href="#!" class="collection-item">INCIDENTES <span class="aviso badge red"> 2 </span></a>
+				<a href="#!" class="collection-item"> TARIFA <span class="aviso badge green"> 10000 COP </span> </a>
+				<a href="#!" class="collection-item">PAGADO <span class="aviso badge green"> 6000 COP </span> </a>
+				<a href="#!" class="collection-item">PENDIENTE<span class="aviso badge red"> 4000 COP </span> </a>
+			</div>
+		</div>
+
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="nav_service" style="display: none">
+
+	<div class="row">
+
+		<div class="input-field col m2 s12">
+			<a onclick="newOrderConfirm()" class=" btn btn-large waves-effect waves-light green">
+				Solicitar Orden
+			</a>
+		</div>
+		<div class="input-field col m2 s12">
+			<a onclick="findDisponibilidad()" class=" btn btn-large waves-effect waves-light red">
+				Cancelar Orden
+			</a>
+		</div>
+		<div class="input-field col m2 s12">
+			<a onclick="findDisponibilidad()" class=" btn btn-large waves-effect waves-light orange">
+				Guardar Orden
+			</a>
+		</div>
+	</div>
+
+</div>
+
+
+<div id="nav_extra" style="display: none">
+
+	<div class="row">
+
+		<div class="input-field col m2 s12">
+			<a onclick="modo('service')" class=" btn btn-large waves-effect waves-light orange">
+				Volver Atrás
+			</a>
+		</div>
+	</div>
+
+</div>
+
+<div id="dashboard_service">
+
+
+
+	<div  class="col m9 s12">
+
+		<div  id="panel">
+		</div>
+
+		<div  id="extra">
+		</div>
+
+
+	</div>
+	
+
+
+
+	<div id="recibo" class="col m3 s12">
+		<div id="acciones">
+
+			<input type='button'  onclick="quantyService(2)" id='quiantyservice' class=' btn btn-small orange' style='width:50px' >
+
+			<input type='button' onclick="quantyService(1)" class=' btn btn-small green'  style='width:50px' value='+'>
+
+			<input type='button' onclick="quantyService(0)" class=' btn btn-small red'  style='width:50px' value='-'>
+
+			<input type='button' onclick="quantyService(3)" class=' btn btn-small blue'  style='width:50px' value='-'>
+
+		</div>
+		<div id="lcd"></div>
+
+
+
+
+	</div>
+
+</div>
+
+<div id="modalCreateDisponibilidad" class="modal ">
+	<form id="formCreateDisponibilidad"  method="POST"  accept-charset="UTF-8">
+		<input name="_method" type="hidden" value="PUT">
+		<div class="modal-content">
+			<div class="row">
+				
+
+				<div class="col m12">
+
+					<div class="carousel carousel-slider" style="height:200px !important">
+					<!--	<a class="carousel-item" href="#one!"><img   style="height:300px !important"   src="https://lorempixel.com/800/400/food/1"></a>
+						<a class="carousel-item" href="#two!"><img   style="height:300px !important" src="https://lorempixel.com/800/400/food/2"></a>
+						<a class="carousel-item" href="#three!"><img  style="height:300px !important"  src="https://lorempixel.com/800/400/food/3"></a>
+						<a class="carousel-item" href="#four!"><img   style="height:300px !important" src="https://lorempixel.com/800/400/food/4"></a>-->
+					</div>
+					
+
+
+				</div>
+
+				<div class="input-field col m6 s12" style="text-align: right;">
+
+					<h3><span id="habitacion_name"></span></h3>
+
+				</div>	
+
+
+				<div class="input-field col m6 s12" style="text-align: right;">
+
+					<button onclick="newDisponibilidadConfirm()"   class="btn-large waves-effect waves-light green darken-4" type="button" name="action"> Registrar  
+						<i class="material-icons right">send</i>
+					</button>
+
+				</div>	
+
+
+			</div>
+		</div>
+
+	</form>
+</div>
+
+
+<div id="modalCreateGuest" class="modal ">
+	<form id="formCreateGuest"  method="POST"  accept-charset="UTF-8">
+		<input name="_method" type="hidden" value="PUT">
+		<div class="modal-content">
+			<div class="row">
+				<div id="inputs"></div>
+
+
+				<div class="input-field col m6 s12">
+					<input  placeholder="" name="firstname" id="firstname" type="text" >
+					<label for="firstname" >Nombres</label>
+				</div>
+
+				<div class="input-field col m6 s12">
+					<input placeholder="" name="lastname" id="lastname" type="text" >
+					<label for="lastname">Apellido</label>
+				</div>
+
+				<div class="input-field col m6 s12">
+					<input placeholder="" name="email" id="email" type="text" >
+					<label for="email">Email</label>
+				</div>
+
+				<div class="input-field col m6 s12">
+					<input placeholder="" name="code" id="code" type="text" >
+					<label> Identificación </label>
+				</div>
+
+
+				<div class="input-field col m6 s12">
+					<input placeholder="" name="telephone" id="telephone" type="text" >
+					<label for="email">Telefono</label>
+				</div>
+
+				<div class="input-field col m6 s12">
+					<select name="nationality_type" id="nationality_type">
+					</select>
+					<label>Nacionalidad</label>
+				</div>
+
+
+				<div class="input-field col m6 s12">
+					<select name="genre" id="genre">
+						<option value="NO ESPECIFICA">No especifica</option>
+						<option value="MASCULINO">Masculino</option>
+						<option value="FEMENINO">Femenino</option>
+					</select>
+					<label>Genero</label>
+				</div>
+
+				<div class="input-field col m6 s12">
+					<select name="genre" id="genre">
+						<option value="espanol">Espanol</option>
+						<option value="ingles">Ingles</option>
+						<option value="frances">frances</option>
+					</select>
+					<label>Idioma</label>
+				</div>
+
+
+				<div class="input-field col m12 s12" style="text-align: right">
+					<button onclick="updateMasterConfirm()"   class="btn-large waves-effect waves-light green darken-4" type="button" name="action"> Agregar Huesped
+						<i class="material-icons right">send</i>
+					</button>
+				</div>	
+
+
+			</div>
+		</div>
+
+	</form>
+</div>
+
+
+<div id="modalCreateRoomservice" class="modal ">
+	<form id="formCreateRoomservice"  method="POST"  accept-charset="UTF-8">
+		<input name="_method" type="hidden" value="PUT">
+		<div class="modal-content">
+			<div class="row">
+				<div id="inputs"></div>
+				<div class="row content"> 
+
+					<div>
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+	</form>
+</div>
+
+
+<div id="modalUpdateMaster" class="modal ">
+	<form id="formUpdateMaster"  method="POST"  accept-charset="UTF-8">
+		<input name="_method" type="hidden" value="PUT">
+		<div class="modal-content">
+			<h4> Edit Master </h4>
+			<div class="row">
+				<div id="inputs"></div>
+
+				<div class="input-field col m12 s12">
+					<input  placeholder="" name="longname" id="longname" type="text" >
+					<label>Long Name</label>
+				</div>
+
+				<div class="input-field col m6 s12">
+					<input placeholder="" name="name" id="name" type="text" class="validate">
+					<label for="name">Name</label>
+				</div>
+
+				<div class="input-field col m6 s12">
+					<select name="color" id="color">
+						<option value="yellow">yellow</option>
+						<option value="red">red</option>
+						<option value="blue">blue</option>
+					</select>
+					<label>Color</label>
+				</div>
+
+				<div class="input-field col m6 s12">
+					<select name="type" id="type">
+						<option value="waiting">Waiting</option>
+						<option value="completed">Completed</option>
+					</select>
+					<label>Type</label>
+				</div>
+
+
+				<div class="input-field col m6 s12">
+					<input  placeholder="" name="icon" id="icon" type="text" >
+					<label>Icon</label>
+				</div>	
+
+
+
+				<div class="input-field col m12 s12" style="text-align: right">
+					<button onclick="updateMasterConfirm()"   class="btn-large waves-effect waves-light green darken-4" type="button" name="action"> Update 
+						<i class="material-icons right">send</i>
+					</button>
+				</div>	
+
+
+			</div>
+		</div>
+
+	</form>
+</div>
+
+
+
+<div id="modalDeleteMaster" class="modal ">
+	<form id="formDeleteMaster"  method="POST"  accept-charset="UTF-8">
+		<input name="_method" type="hidden" value="DELETE">
+		<div class="modal-content">
+
+			<div class="row">
+				<div id="inputs"></div>
+				<h3> Desea eliminar el elemento ?</h3>
+
+				<div class="input-field col m12 s12" style="text-align: right">
+					<button onclick="deleteMasterConfirm()"   class="btn-large waves-effect waves-light green darken-4" type="button" name="action"> Confirmar  
+						<i class="material-icons right">send</i>
+					</button>
+				</div>	
+
+			</div>
+
+
+
+		</div>
+
+	</form>
+</div>
+
+
+
+{% endblock %}
+
+
+
+{% block notification %}
+{% include 'template/notification.html' %}
+{% endblock %}
+
+
+{% block chat_sidebar %} 
+{% include 'template/chat_sidebar.html' %}
+{% endblock %}
+
+
+{% block menu_lateral %} 
+{% include 'template/menu_lateral.html' %}
+{% endblock %}
+
+
+{% block javascript %} 
+<script type="text/javascript" src="js/reservations.js"></script>
+{% endblock %}

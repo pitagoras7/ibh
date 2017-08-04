@@ -1,0 +1,8 @@
+0000000000000000000000000000000000000000 8172a775934486a284b033482619bf87b64b120d pitagoras7 <root@pitagora.pitgora> 1501349197 -0500	branch: Created from refs/remotes/origin/juansam
+8172a775934486a284b033482619bf87b64b120d ce442eecd069c7803d3aa0ed0f7ef7523fb24fde pitagoras7 <root@pitagora.pitgora> 1501349700 -0500	pull origin juansam: Fast-forward
+ce442eecd069c7803d3aa0ed0f7ef7523fb24fde add19182564584b5e7285f80547d1a43a3742b15 pitagoras7 <root@pitagora.pitgora> 1501350320 -0500	commit: cambios de ip
+add19182564584b5e7285f80547d1a43a3742b15 764243f97d2d378767c860dabf8843d9506c9a25 pitagoras7 <pedrolsdrojas@gmail.com> 1501359230 -0500	pull origin daniel: Fast-forward
+764243f97d2d378767c860dabf8843d9506c9a25 bd05788da7bf93642679224076f1e7a3a80ccca6 pitagoras7 <pedrolsdrojas@gmail.com> 1501360086 -0500	commit (merge): 3 cambio
+bd05788da7bf93642679224076f1e7a3a80ccca6 7f11c77051bd4d151a80581395c82e66f7a14b32 pitagoras7 <pedrolsdrojas@gmail.com> 1501361599 -0500	commit: agregue funcion para q no visualice los errores con set_error
+7f11c77051bd4d151a80581395c82e66f7a14b32 1cc44e0435d8bdb38664027577e666a62bb172ba pitagoras7 <pedrolsdrojas@gmail.com> 1501362007 -0500	commit: arreglo de la funcion que muestra los errores
+1cc44e0435d8bdb38664027577e666a62bb172ba 24f888e0d1d53e4409b6e727c6579f2b742a69c1 pitagoras7 <pedrolsdrojas@gmail.com> 1501363726 -0500	pull origin juansam: Fast-forward
