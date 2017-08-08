@@ -1,9 +1,13 @@
-/* Global Styles */
+﻿/* Global Styles */
 
 html, body, .mn-content {
     font-size: 14px;
     height: 100%;
     width: 100%;
+}
+
+.lis{
+color:yellow
 }
 
 html {
